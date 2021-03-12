@@ -11,17 +11,29 @@
 </head>
 
 <body>
-    <div class="box m1">001</div>
-    <div class="box m2">002</div>
-    <div class="box m3">003</div>
-    <div class="box_wide m4">004</div>
+    <section class="s1">
+        <div class="box m1">001</div>
+        <div class="box m2">002</div>
+        <div class="box m3">003</div>
+        <div class="box_wide m4">004</div>
+        <div class="box m5">005</div>
+    </section>
+    <section class="s2">
+        <div class="box n1">001</div>
+        <div class="box n1">001</div>
+        <div class="box n1">001</div>
+        <div class="box n1">001</div>
+        <div class="box n1">001</div>
+    </section>
+
+
+
 
 
 
 
     <script>
         console.log('start');
-
         TweenMax.to('.m1', 1.5, {
             x: 400,
             y: 100,
@@ -29,28 +41,39 @@
             scale: 10,
             rotation: 360,
             ease: Elastic.easeOut.config(1, 0.3)
-           
+
             // ease: SlowMo.ease.config(0.5,0.1, false)
         }) // 物件 秒數 位移 
 
         TweenMax.from('.m2', 1, {
             x: 200,
-            repeat : -1,
-            yoyo : true
+            repeat: -1,
+            yoyo: true
         })
 
-        TweenMax.fromTo('.m3', 1, { x: 10 , y: 10 }, { x: 300 ,  y: 100 });
+        TweenMax.fromTo('.m3', 1, { x: 10, y: 10 }, { x: 300, y: 100 });
 
-       // 
+        // 
         TweenMax.to('.m4', .5, {
             rotation: 180,
             ease: Power0.easeNone,
-            width : '80px' , 
-            borderRadius : '80px' 
+            width: '80px',
+            borderRadius: '80px'
             // transformOrigin : 'center bottom', //定位點
             // repeat : -1
         })
 
+        TweenMax.to('.m5', 2, {
+            rotationX: 360,
+            repeat: -1,
+            transformOrigin: 'center 80% -600', //定位點
+            transformPerspective: 600,
+        })
+        //  staggerTo
+        // TweenMax.staggerTo('.n1' , 1 , {x : -100} , .6);
+        TweenMax.staggerFrom('.n1' , 1 , {x : -100} , .6);
+
+       
 
 
     </script>
