@@ -29,19 +29,26 @@
             scale: 10,
             rotation: 360,
             ease: Elastic.easeOut.config(1, 0.3)
+           
             // ease: SlowMo.ease.config(0.5,0.1, false)
         }) // 物件 秒數 位移 
 
         TweenMax.from('.m2', 1, {
-            x: 200
+            x: 200,
+            repeat : -1,
+            yoyo : true
         })
 
-        TweenMax.fromTo('.m3', 1, { x: 10 }, { x: 300 });
+        TweenMax.fromTo('.m3', 1, { x: 10 , y: 10 }, { x: 300 ,  y: 100 });
 
        // 
-        TweenMax.to('.m4', 1, {
+        TweenMax.to('.m4', .5, {
             rotation: 180,
-            transformOrigin : 'center bottom' //定位點
+            ease: Power0.easeNone,
+            width : '80px' , 
+            borderRadius : '80px' 
+            // transformOrigin : 'center bottom', //定位點
+            // repeat : -1
         })
 
 
