@@ -12,19 +12,37 @@
 
 <body>
     <div class="box m1">001</div>
+    <div class="box m2">002</div>
+    <div class="box m3">003</div>
+    <div class="box_wide m4">004</div>
 
 
 
 
     <script>
         console.log('start');
-        
-        TweenMax.to('.m1', 1.5, { 
-            x: 400, 
-            y: 100, 
-            rotation: 360 
-            ,ease: Elastic.easeOut.config(1,0.3)
+
+        TweenMax.to('.m1', 1.5, {
+            x: 400,
+            y: 100,
+            opacity: 0,
+            scale: 10,
+            rotation: 360,
+            ease: Elastic.easeOut.config(1, 0.3)
+            // ease: SlowMo.ease.config(0.5,0.1, false)
         }) // 物件 秒數 位移 
+
+        TweenMax.from('.m2', 1, {
+            x: 200
+        })
+
+        TweenMax.fromTo('.m3', 1, { x: 10 }, { x: 300 });
+
+       // 
+        TweenMax.to('.m4', 1, {
+            rotation: 180,
+            transformOrigin : 'center bottom' //定位點
+        })
 
 
 
