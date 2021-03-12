@@ -19,18 +19,16 @@
         <div class="box m5">005</div>
     </section>
     <section class="s2">
+        <button id="playBtn" class="btn">play</button>
+        <button id="pauseBtn" class="btn">pause</button>
+        <button id="restartBtn" class="btn">restart</button>
+        <button id="reverseBtn" class="btn">reverse</button>
         <div class="box n1">001</div>
         <div class="box n1">001</div>
         <div class="box n1">001</div>
         <div class="box n1">001</div>
         <div class="box n1">001</div>
     </section>
-
-
-
-
-
-
 
     <script>
         console.log('start');
@@ -69,9 +67,38 @@
             transformOrigin: 'center 80% -600', //定位點
             transformPerspective: 600,
         })
+        const  playBtn = document.getElementById('playBtn'),
+               pauseBtn = document.getElementById('pauseBtn');
+               restartBtn = document.getElementById('restartBtn'),
+               reverseBtn = document.getElementById("reverseBtn");
+
+        
+        
+        
         //  staggerTo
         // TweenMax.staggerTo('.n1' , 1 , {x : -100} , .6);
-        TweenMax.staggerFrom('.n1' , 1 , {x : -100} , .6);
+
+        var mv = TweenMax.to('.n1' , 1 , {x : 300 , repeat : 3});
+
+        playBtn.addEventListener('click' , function(){
+            mv.play();
+        })
+
+        pauseBtn.addEventListener('click' , function(){
+            mv.pause();
+        })
+        restartBtn.addEventListener('click' , function(){
+            mv.restart();
+        })
+        reverseBtn.addEventListener('click' , function(){
+            mv.reverse();
+        })
+
+
+        
+
+    
+
 
        
 
