@@ -1,9 +1,16 @@
 body {
+    padding: 10px;
     margin: 0;
-    padding: 0;
-    background-color: rgb(242, 0, 0);
+    background-color: rgb(38, 38, 38);
 }
-.wrapper h1 {
-    font-size: 14px;
-    color: #fff;
+
+.box {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #78fc05;
 }
+
+
+
