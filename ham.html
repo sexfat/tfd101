@@ -14,22 +14,36 @@
         <div class="bar middle"></div>
         <div class="bar bottom"></div>
     </div>
+    <div class="menu">
+        <ul>
+            <li>001</li>
+            <li>002</li>
+            <li>003</li>
+            <li>004</li>
+        </ul>
+    </div>    
     <script>
         var tl = new TimelineMax();
-        tl.to('.top' , .5 , {width: '50px', rotation: 45})
-        .to('.middle' , .7 , {width: '20px'})
-        .to('.bottom' , .4 , {width: '60px' , rotation: -45})
+        tl.to('.top' , .2 , {width: '50px', rotation: 45})
+        .to('.middle' , .2 , {width: '20px'})
+        .to('.bottom' , .2 , {width: '60px' , rotation: -45})
          // 先讓動畫停止
         tl.stop();
+
+        var tlnav = new TimelineMax();
+         tlnav.to('.menu' , .5 , { left: 0 });
+         tlnav.stop();
 
         // 滑鼠移入
         document.getElementById('nav').onmouseover = function(){
             tl.play();
+            tlnav.play();
         }
 
        //  滑鼠移開，動畫還原
           document.getElementById('nav').onmouseleave = function(){
             tl.reverse();
+            tlnav.reverse();
         }
 
 

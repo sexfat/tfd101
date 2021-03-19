@@ -162,4 +162,26 @@ body .text {
 .bottom {
   margin-top: 6px;
 }
+
+
+.menu  {
+   width: 140px;
+   background-color: #fff; 
+   color: #000;
+   margin-top: 30px;
+   position: relative;
+   left: -140px;
+}
+ul {
+   list-style: none; 
+}
+
+ul li {
+   width: 100%;
+   padding: 30px;
+   text-align: center;
+}
+
+
+
 /*# sourceMappingURL=style.css.map */
