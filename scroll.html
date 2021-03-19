@@ -37,7 +37,9 @@
         var  m1 = TweenMax.to('.m1', 1, { x: 300 });
         // scroll 觸發
         new ScrollMagic.Scene({
-            triggerElement : '#trigger01'  // 觸發點位址
+            triggerElement : '#trigger01' ,  // 觸發點位址
+            offset : 200 // 觸發點調整位址
+
         }).setTween(m1).addIndicators().addTo(controller);
 
 
