@@ -69,8 +69,8 @@
             transformOrigin: 'center 80% -600', //定位點
             transformPerspective: 600,
         })
-        var  playBtn = document.getElementById('playBtn'),
-               pauseBtn = document.getElementById('pauseBtn');
+        // let playBtn = document.querySelector('#playBtn'),
+        //        pauseBtn = document.querySelector('#pauseBtn');
             //    restartBtn = document.getElementById('restartBtn'),
             //    reverseBtn = document.getElementById("reverseBtn");
 
@@ -80,19 +80,24 @@
         //  staggerTo
         // TweenMax.staggerTo('.n1' , 1 , {x : -100} , .6);
 
-        var mv = TweenMax.to('.n1' , 1 , {x : 300 , repeat : 3});
+        const mv = TweenMax.to('.n1' , 1 , {x : 300 , repeat : 3});
 
         playBtn.addEventListener('click' , function(){
+           
             mv.play();
+
         })
 
         pauseBtn.addEventListener('click' , function(){
+           
             mv.pause();
         })
         restartBtn.addEventListener('click' , function(){
+           
             mv.restart();
         })
-        reverseBtn.addEventListener('click' , function(){
+        reverseBtn.addEventListener('click' , function(e){
+            e.stopPropagation();
             mv.reverse();
         })
         // timelinemax
