@@ -23,10 +23,10 @@
 <body>
     <section id="area01"></section>
     <!-- 觸發點 -->
-    <div id="trigger01"></div>  
+    <div id="trigger01"></div>
     <!-- 場景 -->
     <section id="area02">
-        <div class="box m1">m1</div>
+        <div  class="box m1">m1</div>
     </section>
     <section id="area03"></section>
     <section id="area04"></section>
@@ -34,13 +34,30 @@
 
         var controller = new ScrollMagic.Controller();
         //01 動畫
-        var  m1 = TweenMax.to('.m1', 1, { x: 300 });
+        
+
+        // var  m1 = TweenMax.to('.m1', 1, { x: 300 });
+
+        var tl = new TimelineMax();
+        tl.to('.m1' , 1 , {
+            x: 300
+        }).to('.m1' , 1, {y: 400}).to('.m1' , 1 , {
+            rotation: 360,
+            x: 500,
+            scale: 4
+        })
+
+
+
         // scroll 觸發
         new ScrollMagic.Scene({
             triggerElement : '#trigger01' ,  // 觸發點位址
-            offset : 200 // 觸發點調整位址
+            offset : 10 ,  // 場景觸發點調整位址
+            triggerHook : 0.5 , // 瀏覽器觸發點
+            reverse :  true , //動畫返回 預設：true
+            duration: '300px'
 
-        }).setTween(m1).addIndicators().addTo(controller);
+        }).setTween(tl).addIndicators().addTo(controller);
 
 
 
