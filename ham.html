@@ -13,15 +13,16 @@
         <div class="bar top"></div>
         <div class="bar middle"></div>
         <div class="bar bottom"></div>
+        <div class="menu">
+            <ul>
+                <li>001</li>
+                <li>002</li>
+                <li>003</li>
+                <li>004</li>
+            </ul>
+        </div>    
     </div>
-    <div class="menu">
-        <ul>
-            <li>001</li>
-            <li>002</li>
-            <li>003</li>
-            <li>004</li>
-        </ul>
-    </div>    
+  
     <script>
         var tl = new TimelineMax();
         tl.to('.top' , .2 , {width: '50px', rotation: 45})
@@ -45,9 +46,6 @@
             tl.reverse();
             tlnav.reverse();
         }
-
-
-
     </script>
 </body>
 </html>
