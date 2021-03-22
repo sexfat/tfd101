@@ -31,11 +31,18 @@
     <!-- 觸發點 -->
     <div id="trigger02"></div>
     <!-- 第二個場景 -->
-    <section class="area03" id="area03">
+    <section class="classChange" id="area03">
         <div class="box m2">m2</div>
         <div class="box m3">m3</div>
     </section>
-    <section id="area04"></section>
+     <!-- 觸發點 -->
+     <div id="trigger03"></div>
+    <section id="area04">
+        <div class="text area1"></div>
+        <div class="text area2"></div>
+        <div class="text area3"></div>
+        <div class="text area4"></div>
+    </section>
     <section id="area05"></section>
     <script>
 
@@ -81,10 +88,10 @@
         // 觸發事件
         new ScrollMagic.Scene({
             triggerElement: '#trigger02'
-        }).setClassToggle('.area03' , 'active').setTween([m2 , m3])
+        }).setClassToggle('.classChange' , 'active on').setTween([m2 , m3])
         .addIndicators().addTo(controller);
 
-        
+
 
 
 
