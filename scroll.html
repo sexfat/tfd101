@@ -33,6 +33,7 @@
     <!-- 第二個場景 -->
     <section class="area03" id="area03">
         <div class="box m2">m2</div>
+        <div class="box m3">m3</div>
     </section>
     <section id="area04"></section>
     <section id="area05"></section>
@@ -69,13 +70,18 @@
 
         //場景二的動畫
 
-        TweenMax.to('.m2' , 1 , {
-            y: 100
+        var m2 = TweenMax.to('.m2' , 1 , {
+            y: 200
+        })
+        var m3 = TweenMax.to('.m3' , 1 , {
+            x: 200,
+            delay : 1
         })
 
+        // 觸發事件
         new ScrollMagic.Scene({
-            triggerElement: 'trigger02'
-        }).setClassToggle('.area03' , 'active')
+            triggerElement: '#trigger02'
+        }).setClassToggle('.area03' , 'active').setTween([m2 , m3])
         .addIndicators().addTo(controller);
 
 
