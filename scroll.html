@@ -37,7 +37,7 @@
     </section>
      <!-- 觸發點 -->
      <div id="trigger03"></div>
-    <section id="area04">
+    <section class="area04" id="area04">
         <div class="text area1"></div>
         <div class="text area2"></div>
         <div class="text area3"></div>
@@ -93,7 +93,7 @@
         // 觸發事件
         new ScrollMagic.Scene({
             triggerElement: '#trigger02'
-        }).setClassToggle('.area3' , 'active').setTween([m2 , m3])
+        }).setClassToggle(".area03 ,   .area04", 'active').setTween([m2 , m3])  //可以增加多個類
         .addIndicators().addTo(controller);
 
 //場景三
