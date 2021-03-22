@@ -142,7 +142,7 @@ body .text {
 }
 
 .bar {
-  width: 40px;
+  width: 100px;
   height: 5px;
   background-color: #fff;
   position: relative;
@@ -152,7 +152,7 @@ body .text {
 
 #nav {
   cursor: pointer;
-  width: 50px;
+  width: 80px;
 }
 
 .top {
@@ -184,4 +184,3 @@ ul li {
 
 
 
-/*# sourceMappingURL=style.css.map */
