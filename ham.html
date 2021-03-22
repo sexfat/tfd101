@@ -25,7 +25,7 @@
   
     <script>
         var tl = new TimelineMax();
-        tl.to('.top' , .2 , {width: '50px', rotation: 45})
+        tl.to('.top' , .2 , {width: '40px', rotation: 45})
         .to('.middle' , .2 , {width: '20px'})
         .to('.bottom' , .2 , {width: '60px' , rotation: -45})
          // 先讓動畫停止
@@ -34,18 +34,23 @@
         var tlnav = new TimelineMax();
          tlnav.to('.menu' , .5 , { left: 0 });
          tlnav.stop();
+    //     // 滑鼠移入
+    //     document.getElementById('nav').onmouseover = function(){
+    //         tl.play();
+    //         tlnav.play();
+    //     }
 
-        // 滑鼠移入
-        document.getElementById('nav').onmouseover = function(){
-            tl.play();
-            tlnav.play();
-        }
-
-       //  滑鼠移開，動畫還原
-          document.getElementById('nav').onmouseleave = function(){
-            tl.reverse();
-            tlnav.reverse();
-        }
+    //    //  滑鼠移開，動畫還原
+    //       document.getElementById('nav').onmouseleave = function(){
+    //         tl.reverse();
+    //         tlnav.reverse();
+    //     }
+     // 另一種寫法  
+     document.getElementById('nav').onclick = function(event){
+            event.preventDefault();
+            tl.reversed() ? tl.play() : tl.reverse();
+            tlnav.reversed() ? tlnav.play() : tlnav.reverse();
+      }  
     </script>
 </body>
 </html>
