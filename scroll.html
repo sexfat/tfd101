@@ -109,7 +109,10 @@
         })
 
         new ScrollMagic.Scene({
-            triggerElement: '#trigger03'
+            triggerElement: '#trigger03',
+            triggerHook: 0,
+            duration: '400%'
+
         }).setPin('#area04').setTween(tls)
         .addIndicators().addTo(controller);
 
