@@ -31,7 +31,7 @@
     <!-- 觸發點 -->
     <div id="trigger02"></div>
     <!-- 第二個場景 -->
-    <section id="area03">
+    <section class="area03" id="area03">
         <div class="box m2">m2</div>
     </section>
     <section id="area04"></section>
@@ -66,6 +66,19 @@
             duration: '300px' //scroll 距離 
 
         }).setTween(tl).addIndicators().addTo(controller);
+
+        //場景二的動畫
+
+        TweenMax.to('.m2' , 1 , {
+            y: 100
+        })
+
+        new ScrollMagic.Scene({
+            triggerElement: 'trigger02'
+        }).setClassToggle('.area03' , 'active')
+        .addIndicators().addTo(controller);
+
+
 
 
 
