@@ -1,4 +1,5 @@
 @import 'sass/base/var';
+@import 'sass/mixins/mixin';
 @import 'sass/base/reset';
 @import 'sass/base/common';
 @import 'sass/layout/header';
@@ -64,29 +65,7 @@ body {
 //    //do something 
 // }
 
-// function
-@mixin margincenter(){
-    margin-left:auto ;
-    margin-right: auto;
-    margin-top: 10px;
-}
 
-// no value
-@mixin rect() {
-    width: 100px;
-    height: 50px;
-    @include margincenter();
-}
-
-@mixin rect_v($w:100% , $h:100vh) {
-    width: $w;
-    height: $h;
-}  // 預設值
-
-@mixin rect_default($w  ,$h:null) {
-    width: $w;
-    height: $h;
-}  // 預設值
 
 
 // call
@@ -103,23 +82,6 @@ body {
    @include rect_v(80%, 50vh);
    @include margincenter();
 }
-
-@mixin btn($fsize , $w , $bgc , $color){
-  font-size: $fsize; 
-  width: $w;
-  background-color: $bgc;
-  color :$color;
-  padding: 20px;
-  text-align: center;
-  border:1px solid darken($bgc , 5) ;
-  transition: .3s all ease-in-out;
-  cursor: pointer;
-  border-radius: 5px;
-  &:hover {
-    background-color: darken($bgc , 20);  
-  }
-}
-
 .btn-large {
     @include btn(20px, 300px , #00ffd0 , #333 )
 } 
@@ -128,6 +90,15 @@ body {
     @include btn(15px, 150px , #7700ff , #fbff04 );
     // border-radius: 20px;
 } 
+
+.btn-small {
+    @include btn(14px, 90px , #fc7070 , #ffffff );
+    border-radius: 20px;
+    margin-top: 10px;
+} 
+
+
+
 
 
 

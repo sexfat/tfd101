@@ -140,7 +140,7 @@ body {
   padding: 20px;
   text-align: center;
   border: 1px solid #00e6bb;
-  transition: 0.3s all ease-in-out;
+  transition: 0.4s all ease-in-out;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -156,12 +156,30 @@ body {
   padding: 20px;
   text-align: center;
   border: 1px solid #6b00e6;
-  transition: 0.3s all ease-in-out;
+  transition: 0.4s all ease-in-out;
   cursor: pointer;
   border-radius: 5px;
 }
 .btn-medium:hover {
   background-color: #470099;
+}
+
+.btn-small {
+  font-size: 14px;
+  width: 90px;
+  background-color: #fc7070;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #fb5757;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.btn-small:hover {
+  background-color: #fa0c0c;
 }
 
 /*# sourceMappingURL=style.css.map */
