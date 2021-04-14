@@ -135,17 +135,17 @@ $colors : green;
 
 @mixin fontsize($device) {
     @if $device == desktop {
-       font-size: 16px;    
+       font-size: 13px;    
     }@else if $device == medium {
-        font-size: 20px;    
+        font-size: 24px;    
      }@else if $device == mobile {
-         font-size: 25px;
+         font-size: 28px;
      }
 }
 
 
 .wrapper {
-    @include layout(1366);
+    @include layout(100);
     @include fontsize(mobile);
 
 }

@@ -202,9 +202,9 @@ body {
 }
 
 .wrapper {
-  width: 1366;
-  margin: 0 auto;
-  font-size: 25px;
+  width: 100vw;
+  height: 100vh;
+  font-size: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */
