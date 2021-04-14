@@ -1,6 +1,9 @@
 @import 'sass/base/var';
 @import 'sass/mixins/mixin';
 @import 'sass/base/reset';
+/*boostrap-sass start*/
+// @import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+/*boostrap-sass end*/
 @import 'sass/base/common';
 @import 'sass/layout/header';
 @import 'sass/layout/footer';
