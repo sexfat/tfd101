@@ -83,6 +83,12 @@ body {
     height: $h;
 }  // 預設值
 
+@mixin rect_default($w  ,$h:null) {
+    width: $w;
+    height: $h;
+}  // 預設值
+
+
 // call
 .box {
 //   @include margincenter(); 
@@ -99,7 +105,7 @@ body {
 }
 
 @mixin btn($fsize , $w , $bgc , $color){
-   font-size: $fsize; 
+  font-size: $fsize; 
   width: $w;
   background-color: $bgc;
   color :$color;
@@ -107,6 +113,8 @@ body {
   text-align: center;
   border:1px solid darken($bgc , 5) ;
   transition: .3s all ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
   &:hover {
     background-color: darken($bgc , 20);  
   }
@@ -114,6 +122,11 @@ body {
 
 .btn-large {
     @include btn(20px, 300px , #00ffd0 , #333 )
+} 
+
+.btn-medium {
+    @include btn(15px, 150px , #7700ff , #fbff04 );
+    // border-radius: 20px;
 } 
 
 

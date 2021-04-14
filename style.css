@@ -141,9 +141,27 @@ body {
   text-align: center;
   border: 1px solid #00e6bb;
   transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
 }
 .btn-large:hover {
   background-color: #00997d;
+}
+
+.btn-medium {
+  font-size: 15px;
+  width: 150px;
+  background-color: #7700ff;
+  color: #fbff04;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #6b00e6;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn-medium:hover {
+  background-color: #470099;
 }
 
 /*# sourceMappingURL=style.css.map */
