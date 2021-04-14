@@ -1,14 +1,52 @@
+/* 註解 */
+$fontsize : 18px;//字體
+$h1 : 30px;     // 數值
+$color : #333; // 顏色
+$fontfamily : '微軟正黑'; // 字串
+$margin: 10px 20px 30px 10px; // list
+$null : null ;
+$aa : true;
+$btn-color : (
+    'blue' : #1900fe,
+    'yellow' : #fefe00
+);   // map
+ 
+
+
 body {
     padding: 0;
-    margin: 0;
-    font-size: 20px;
+    color: $color;
+    margin: $margin;
+    font-size: $fontsize;
+    background-color: map-get($btn-color , 'yellow');
 }
+
+
+// nesting
 .wrapper {
     width: 1200px;
     margin: 0 auto;
+    .row {
+        display: flex;
+        width: 100%;
+        h1 {
+           font-size: 30px; 
+        }
+        p {
+           font-size: 14px; 
+           span {
+               font: 10px;
+           }
+        }
+    }
 }
-p {
-   font-size: 20px;
-   line-height: 1.5; 
-}
+
+// .wrapper .row h1 {
+//     font-size: $h1;
+// }
+
+// .wrapper .row p {
+//     font-size: 14px;
+// }
+
 
