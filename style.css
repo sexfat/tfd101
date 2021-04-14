@@ -17,13 +17,29 @@ body {
   width: 100%;
 }
 .wrapper .row h1 {
-  font-size: 30px;
+  font-size: 36px;
 }
 .wrapper .row p {
-  font-size: 14px;
+  font-size: 15px;
 }
 .wrapper .row p span {
-  font: 10px;
+  font: 12px;
+}
+.wrapper .row .btncolor {
+  width: 200px;
+  height: 40px;
+  background-color: #36fca6;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+.wrapper .row .btncolor:hover {
+  background-color: #03c973;
+}
+.wrapper .row .btncolor::after {
+  content: "";
+}
+.wrapper .row .btncolor::before {
+  content: "";
 }
 
 /*# sourceMappingURL=style.css.map */

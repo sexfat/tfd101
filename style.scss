@@ -1,5 +1,5 @@
 /* 註解 */
-$fontsize : 18px;//字體
+$fontsize : 18px;//body 預設大小
 $h1 : 30px;     // 數值
 $color : #333; // 顏色
 $fontfamily : '微軟正黑'; // 字串
@@ -30,14 +30,37 @@ body {
         display: flex;
         width: 100%;
         h1 {
-           font-size: 30px; 
+           font-size: $fontsize * 2; 
         }
         p {
-           font-size: 14px; 
+           font-size: $fontsize - 3 ; 
            span {
-               font: 10px;
+               font: $fontsize - 6 ;
            }
         }
+        $btncolor:  #36fca6 ;
+        .btncolor{
+            width: 200px;
+            height: 40px;
+            // background-color: #86e600;
+            background-color: darken($btncolor , 0)  ;
+            cursor: pointer;
+            transition: .2s all ease-in-out;
+            &:hover {
+                background-color: darken($btncolor , 20);
+            }
+            &::after {
+                content: '';
+            }
+            &::before {
+                content: '';
+            }
+
+        }
+        // .btncolor:hover {
+        //     background-color: darken($btncolor , 20)  ;
+        // }
+        
     }
 }
 
