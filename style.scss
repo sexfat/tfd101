@@ -1,15 +1,11 @@
-/* 註解 */
-$fontsize : 18px;//body 預設大小
-$h1 : 30px;     // 數值
-$color : #333; // 顏色
-$fontfamily : '微軟正黑'; // 字串
-$margin: 10px 20px 30px 10px; // list
-$null : null ;
-$aa : true;
-$btn-color : (
-    'blue' : #1900fe,
-    'yellow' : #fefe00
-);   // map
+@import 'sass/base/var';
+@import 'sass/base/reset';
+@import 'sass/base/common';
+@import 'sass/layout/header';
+@import 'sass/layout/footer';
+@import 'sass/layout/login';
+@import 'sass/page/index';
+@import 'sass/page/aboutus';
  
 
 
@@ -56,7 +52,6 @@ body {
             &::before {
                 content: '';
             } 
-
         }
         // .btncolor:hover {
         //     background-color: darken($btncolor , 20)  ;
