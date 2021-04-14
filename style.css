@@ -108,4 +108,42 @@ body {
   content: "";
 }
 
+.box {
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.box-wide {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 1200px;
+  height: 2vh;
+}
+
+.box-small {
+  width: 80%;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.btn-large {
+  font-size: 20px;
+  width: 300px;
+  background-color: #00ffd0;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #00e6bb;
+  transition: 0.3s all ease-in-out;
+}
+.btn-large:hover {
+  background-color: #00997d;
+}
+
 /*# sourceMappingURL=style.css.map */

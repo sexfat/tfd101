@@ -60,12 +60,71 @@ body {
     }
 }
 
-// .wrapper .row h1 {
-//     font-size: $h1;
+// function name(){
+//    //do something 
 // }
 
-// .wrapper .row p {
-//     font-size: 14px;
-// }
+// function
+@mixin margincenter(){
+    margin-left:auto ;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+// no value
+@mixin rect() {
+    width: 100px;
+    height: 50px;
+    @include margincenter();
+}
+
+@mixin rect_v($w:100% , $h:100vh) {
+    width: $w;
+    height: $h;
+}  // 預設值
+
+// call
+.box {
+//   @include margincenter(); 
+  @include rect();
+}
+
+.box-wide {
+   @include margincenter();  
+   @include rect_v(1200px , 2vh);
+}
+.box-small {
+   @include rect_v(80%, 50vh);
+   @include margincenter();
+}
+
+@mixin btn($fsize , $w , $bgc , $color){
+   font-size: $fsize; 
+  width: $w;
+  background-color: $bgc;
+  color :$color;
+  padding: 20px;
+  text-align: center;
+  border:1px solid darken($bgc , 5) ;
+  transition: .3s all ease-in-out;
+  &:hover {
+    background-color: darken($bgc , 20);  
+  }
+}
+
+.btn-large {
+    @include btn(20px, 300px , #00ffd0 , #333 )
+} 
+
+
+
+
+
+
+
+
+
+
+
 
 
