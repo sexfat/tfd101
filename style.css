@@ -184,4 +184,27 @@ body {
   background-color: #fa0c0c;
 }
 
+.box-o {
+  width: 11px;
+  height: 9px;
+  margin: 100px;
+  font: 2.5px;
+}
+
+.box-s {
+  width: 33px;
+  height: 33px;
+  margin: 34px;
+}
+
+.bgc_area {
+  background-color: #000;
+}
+
+.wrapper {
+  width: 1366;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=style.css.map */

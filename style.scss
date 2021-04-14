@@ -64,9 +64,7 @@ body {
     }
 }
 
-// function name(){
-//    //do something 
-// }
+
 
 
 
@@ -99,6 +97,81 @@ body {
     border-radius: 20px;
     margin-top: 10px;
 } 
+
+.box-o {
+   width: 10 + 1px;
+   height:  10px - 1;
+   margin: 10 * 10 +px;
+   font : (30 / 12) + px 
+}
+
+.box-s {
+   width: floor(100 / 3) + px;  // 無條件捨去
+   height: round(100 / 3) + px;  // 四捨五入
+   margin: ceil(100 / 3) + px;  // 無條件進位
+}
+
+// @if @else
+
+$colors : green;
+
+.bgc_area {
+   @if $colors == yellow {
+       background-color: $colors;
+   }@else {
+    background-color: #000;
+   }
+}
+//
+@mixin layout($w) {
+   @if  $w == 100 {
+       width: 100vw;
+       height: 100vh;
+   }@else {
+       width: $w;
+       margin: 0 auto;
+   }
+} 
+
+@mixin fontsize($device) {
+    @if $device == desktop {
+       font-size: 16px;    
+    }@else if $device == medium {
+        font-size: 20px;    
+     }@else if $device == mobile {
+         font-size: 25px;
+     }
+}
+
+
+.wrapper {
+    @include layout(1366);
+    @include fontsize(mobile);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// @for $i from 1 through 100 {
+//   .push-left-#{$i}  { 
+//    margin-left: $i * 1px; 
+//   }
+// }
+
+
+
+
+
+
 
 
 
