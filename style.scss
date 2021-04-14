@@ -43,7 +43,8 @@ body {
             width: 200px;
             height: 40px;
             // background-color: #86e600;
-            background-color: darken($btncolor , 0)  ;
+            // background-color: lighten($btncolor , 0)  ;//變亮
+            background-color: darken($btncolor , 20)  ; // 變暗
             cursor: pointer;
             transition: .2s all ease-in-out;
             &:hover {
@@ -54,7 +55,7 @@ body {
             }
             &::before {
                 content: '';
-            }
+            } 
 
         }
         // .btncolor:hover {

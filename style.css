@@ -28,7 +28,7 @@ body {
 .wrapper .row .btncolor {
   width: 200px;
   height: 40px;
-  background-color: #36fca6;
+  background-color: #03c973;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
 }
