@@ -359,6 +359,10 @@ $textfont : (
   h3 : 28px,
   h4 : 20px,
   h5 : 16px,
+  span : 10px,
+  p : 15px,
+  table : 20px,
+  body : 16px
 );//map
 
 
@@ -375,6 +379,19 @@ $textfont : (
 
 
 @include fonttitle($textfont);
+
+
+// prefix 
+@mixin prefix($p , $val){
+  @each $prefix in '' , -webkit- , -moz- , -ms- , -o-  {
+      #{$prefix}#{$p} : $val;
+   }
+}
+
+.box {
+  @include prefix(transition , all 3s ease);
+}
+
 
 
 

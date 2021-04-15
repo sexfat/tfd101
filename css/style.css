@@ -438,4 +438,44 @@ h5 {
 h5::after, h5::before {
   content: '';
 }
+
+span {
+  font-size: 10px;
+}
+
+span::after, span::before {
+  content: '';
+}
+
+p {
+  font-size: 15px;
+}
+
+p::after, p::before {
+  content: '';
+}
+
+table {
+  font-size: 20px;
+}
+
+table::after, table::before {
+  content: '';
+}
+
+body {
+  font-size: 16px;
+}
+
+body::after, body::before {
+  content: '';
+}
+
+.box {
+  transition: all 3s ease;
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -o-transition: all 3s ease;
+}
 /*# sourceMappingURL=style.css.map */
