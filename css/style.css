@@ -478,4 +478,93 @@ body::after, body::before {
   -ms-transition: all 3s ease;
   -o-transition: all 3s ease;
 }
+
+.btn-default {
+  background-color: #fff;
+  font-size: 20px;
+  width: 300px;
+  background-color: #00ffd0;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #00e6bb;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-default:hover {
+  background-color: #00997d;
+}
+
+.btn-error {
+  background-color: red;
+  font-size: 20px;
+  width: 300px;
+  background-color: #00ffd0;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #00e6bb;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-error:hover {
+  background-color: #00997d;
+}
+
+.btn-warm {
+  background-color: #fbe600;
+  font-size: 20px;
+  width: 300px;
+  background-color: #00ffd0;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #00e6bb;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-warm:hover {
+  background-color: #00997d;
+}
+
+.btn-info {
+  background-color: blue;
+  font-size: 20px;
+  width: 300px;
+  background-color: #00ffd0;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #00e6bb;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-info:hover {
+  background-color: #00997d;
+}
+
+.box {
+  font-size: 20px;
+  width: 300px;
+  background-color: #ffd70f;
+  color: #ce1616;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #f5cc00;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.box:hover {
+  background-color: #a88c00;
+}
 /*# sourceMappingURL=style.css.map */

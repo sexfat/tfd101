@@ -393,6 +393,36 @@ $textfont : (
 }
 
 
+$btn-color : (
+   'default' : #fff,
+   'error' : red,
+   'warm' : #fbe600,
+   'info' : blue 
+);
+
+@each $k , $v in $btn-color {
+   .btn-#{$k} {
+       background-color: $v;
+       @include btn(20px, 300px , #00ffd0 , #333 )
+   }
+}
+
+
+.box {
+    @include btn(20px, 300px , #ffd70f , rgb(206, 22, 22) )
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
