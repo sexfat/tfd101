@@ -219,6 +219,26 @@ $colors : green;
 @include btn-module('.btn-large', 200px  , 50px);
 
 
+// @for $i from 1 through 10 {
+//     .a_#{$i} {
+//        width: $i * 10px; 
+//     }
+// }
+
+@mixin push-module($num , $dis) {
+    @for $i from 1 through $num {
+      .push-#{$dis}_#{$i}{
+          position: relative;
+          #{$dis}: $i *1px;
+      }
+    }
+}
+
+@include push-module(100 , right); 
+ 
+
+
+
 
 
 
