@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/sexfat/tfd101#readme",
   "dependencies": {
-    "bootstrap-sass": "^3.4.1",
-    "gsap": "^3.6.1",
-    "jquery": "^3.6.0",
     "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }
