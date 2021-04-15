@@ -332,4 +332,22 @@ body {
   width: 100%;
   display: inline-block;
 }
+
+@media all and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+  }
+}
+
+@media all and (max-width: 996px) and (min-width: 769px) {
+  .wrapper {
+    width: 960px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .wrapper {
+    width: 400px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

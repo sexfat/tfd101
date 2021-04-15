@@ -249,6 +249,50 @@ $colors : green;
 
 @include grid(12);
 
+
+
+@mixin rwd($breakpoint){
+  @if $breakpoint == 'desktop' {  
+   @media all and (min-width: 1200px){
+    @content;
+    }
+  }
+  @else if $breakpoint == 'pad' {
+    @media all and (max-width:996px) and (min-width: 769px){
+        @content;
+    }
+  }
+  @else if $breakpoint == 'mobile' {
+    @media all and (max-width: 768px){
+        @content;
+    } 
+  }
+}
+
+@include rwd(desktop){
+    .wrapper {
+        width: 1200px;
+    }
+}
+
+@include rwd(pad){
+    .wrapper {
+        width: 960px;
+    }
+}
+
+@include rwd(mobile){
+    .wrapper {
+        width:400px ;
+    }
+}
+
+
+
+
+
+
+
  
 
 
