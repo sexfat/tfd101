@@ -203,6 +203,34 @@ $colors : green;
 }
 
 
+@mixin btn-module($class, $w , $p , $align:center) {
+    #{$class} {
+       width: $w;
+       padding: $p;
+       text-align: $align; 
+       @extend .blue;
+       @extend .border;
+    }
+}
+
+
+@include btn-module('.btn-default', 100px  , 30px );
+
+@include btn-module('.btn-large', 200px  , 50px);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

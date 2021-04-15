@@ -218,7 +218,7 @@ body {
   font-size: 28px;
 }
 
-.blue, .box-color {
+.blue, .box-color, .btn-default, .btn-large {
   color: blue;
 }
 
@@ -230,7 +230,7 @@ body {
   color: #f7f700;
 }
 
-.border, .box-color {
+.border, .box-color, .btn-default, .btn-large {
   border: 1px solid #00ffd0;
 }
 
@@ -259,5 +259,17 @@ body {
 .box-test {
   width: 400px;
   height: 50px;
+}
+
+.btn-default {
+  width: 100px;
+  padding: 30px;
+  text-align: center;
+}
+
+.btn-large {
+  width: 200px;
+  padding: 50px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
