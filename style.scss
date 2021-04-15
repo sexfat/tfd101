@@ -152,16 +152,20 @@ $colors : green;
 .blue {
    color: blue; 
 }
-.border {
+.green {
+    color: green; 
+ }
+ .yellow {
+    color: #f7f700;
+ }
+
+ .border {
     border: 1px solid #00ffd0;
 }
-
 .borde-r {
    border-radius: 5px; 
 }
-.green {
-   color: green; 
-}
+
 
 @mixin green() {
     color: green;
@@ -176,14 +180,32 @@ $colors : green;
 }
 
 
+.big {
+    font-size: 4.8rem;
+ }
+ .medium {
+    font-size: 2.4rem;
+ }
+ .small{
+    font-size: 0.8rem; 
+ }
+ 
+
 .box-test {
     width: 400px;
     height: 50px;
     // @include green();
-    @extend.green;
-    @extend .borde-r;
-    @extend .border;
+    @extend .green;
+    @extend .medium;
 }
+
+
+
+
+
+
+
+
 
 
 
