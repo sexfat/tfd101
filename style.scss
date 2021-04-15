@@ -183,6 +183,10 @@ $colors : green;
 .big {
     font-size: 4.8rem;
  }
+//佔位
+ %big {
+    font-size: 4.8rem;
+ }
  .medium {
     font-size: 2.4rem;
  }
@@ -190,7 +194,6 @@ $colors : green;
     font-size: 0.8rem; 
  }
  
-
 .box-test {
     width: 400px;
     height: 50px;
