@@ -149,9 +149,47 @@ $colors : green;
     @include fontsize(mobile);
 }
 
-a {
-   color: #414141; 
+.blue {
+   color: blue; 
 }
+.border {
+    border: 1px solid #00ffd0;
+}
+
+.borde-r {
+   border-radius: 5px; 
+}
+.green {
+   color: green; 
+}
+
+@mixin green() {
+    color: green;
+}
+.box-color {
+   width: 300px;
+   height: 50px;
+   background-color: #fff;
+   @extend .blue; 
+   @extend .border;
+   @extend .borde-r;
+}
+
+
+.box-test {
+    width: 400px;
+    height: 50px;
+    // @include green();
+    @extend.green;
+    @extend .borde-r;
+    @extend .border;
+}
+
+
+
+
+
+
 
 
 
