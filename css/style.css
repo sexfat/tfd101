@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* 註解 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*boostrap-sass start*/
+/*boostrap-sass end*/
+h1 {
+  font-size: 40px;
+}
+
+nav ul li {
+  font-size: 18px;
+}
+
+.wrapper-index h1 {
+  font-size: 33px;
+}
+
+.wrapper-aboutus h1 {
+  font-size: 32px;
+}
+
+body {
+  padding: 0;
+  color: #333;
+  margin: 10px 20px 30px 10px;
+  font-size: 18px;
+  background-color: #fefe00;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper .row {
+  display: flex;
+  width: 100%;
+}
+
+.wrapper .row h1 {
+  font-size: 36px;
+}
+
+.wrapper .row p {
+  font-size: 15px;
+}
+
+.wrapper .row p span {
+  font: 12px;
+}
+
+.wrapper .row .btncolor {
+  width: 200px;
+  height: 40px;
+  background-color: #03c973;
+  cursor: pointer;
+  transition: .2s all ease-in-out;
+}
+
+.wrapper .row .btncolor:hover {
+  background-color: #03c973;
+}
+
+.wrapper .row .btncolor::after {
+  content: '';
+}
+
+.wrapper .row .btncolor::before {
+  content: '';
+}
+
+.box {
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.box-wide {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 1200px;
+  height: 2vh;
+}
+
+.box-small {
+  width: 80%;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.btn-large {
+  font-size: 20px;
+  width: 300px;
+  background-color: #00ffd0;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #00e6bb;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-large:hover {
+  background-color: #00997d;
+}
+
+.btn-medium {
+  font-size: 15px;
+  width: 150px;
+  background-color: #7700ff;
+  color: #fbff04;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #6b00e6;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-medium:hover {
+  background-color: #470099;
+}
+
+.btn-small {
+  font-size: 14px;
+  width: 90px;
+  background-color: #fc7070;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #fb5757;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.btn-small:hover {
+  background-color: #fa0c0c;
+}
+
+.box-o {
+  width: 11px;
+  height: 9px;
+  margin: 100px;
+  font: 2.5px;
+}
+
+.box-s {
+  width: 33px;
+  height: 33px;
+  margin: 34px;
+}
+
+.bgc_area {
+  background-color: #000;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  font-size: 28px;
+}
+
+a {
+  color: #414141;
+}
+/*# sourceMappingURL=style.css.map */

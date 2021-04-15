@@ -139,7 +139,7 @@ $colors : green;
     }@else if $device == medium {
         font-size: 24px;    
      }@else if $device == mobile {
-         font-size: 28px;
+        font-size: 28px;
      }
 }
 
@@ -147,8 +147,15 @@ $colors : green;
 .wrapper {
     @include layout(100);
     @include fontsize(mobile);
-
 }
+
+a {
+   color: #414141; 
+}
+
+
+
+
 
 
 
