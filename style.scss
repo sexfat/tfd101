@@ -234,7 +234,21 @@ $colors : green;
     }
 }
 
-@include push-module(100 , right); 
+// @include push-module(100 , right); 
+// @include push-module(100 , top);
+
+@mixin grid($num){
+@for $i from 1 through $num {
+    .col-#{$i}{
+        width:($i / $num ) * 100%;
+        display: inline-block;
+        @content; //擴增屬性
+    }
+ }
+}
+
+@include grid(12);
+
  
 
 
