@@ -356,4 +356,62 @@ body {
     width: 400px;
   }
 }
+
+.box_1 {
+  width: 1px;
+}
+
+.box_2 {
+  width: 2px;
+}
+
+.box_3 {
+  width: 3px;
+}
+
+.box_4 {
+  width: 4px;
+}
+
+.img_a1 {
+  background-image: url("./img/a1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.img_a2 {
+  background-image: url("./img/a2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.img_a3 {
+  background-image: url("./img/a3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.img_a4 {
+  background-image: url("./img/a4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.img_b1 {
+  background-image: url("./img/b1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.img_b2 {
+  background-image: url("./img/b2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

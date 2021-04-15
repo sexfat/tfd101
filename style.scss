@@ -310,6 +310,31 @@ $mobile : 768px;
     }
 }
 
+$list : 1 2 3 4 ;// list
+
+@each $var in $list {
+   .box_#{$var}{
+     width: $var +px; 
+   }
+}
+
+
+$link : a1 a2 a3 a4 b1 b2; 
+
+@each $file in $link {
+  .img_#{$file} {
+      background-image: url('./img/#{$file}.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+  }
+}
+
+
+
+
+
+
 
 
 
