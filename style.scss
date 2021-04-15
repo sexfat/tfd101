@@ -249,21 +249,44 @@ $colors : green;
 
 @include grid(12);
 
+$desktop : 1366x;
+$pad_max : 769px;
+$pad_min : 1200px;
+$mobile : 768px;
+
+@mixin r($num , $v:min){
+ @if $v == 'min'{   
+   @media all and (min-width: $num){
+      @content;
+    }
+  }
+  @else if $v == 'max'{
+     @media all and (max-width: $num){
+      @content;
+    }  
+  } 
+}
+
+@include r(550px , min){
+    .content {
+        font-size : 30px
+    }
+}
 
 
 @mixin rwd($breakpoint){
   @if $breakpoint == 'desktop' {  
-   @media all and (min-width: 1200px){
+   @media all and (min-width: $desktop){
     @content;
     }
   }
   @else if $breakpoint == 'pad' {
-    @media all and (max-width:996px) and (min-width: 769px){
+    @media all and (max-width:$pad_max) and (min-width: $pad_min){
         @content;
     }
   }
   @else if $breakpoint == 'mobile' {
-    @media all and (max-width: 768px){
+    @media all and (max-width: $mobile){
         @content;
     } 
   }

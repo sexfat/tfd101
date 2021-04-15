@@ -333,13 +333,19 @@ body {
   display: inline-block;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 550px) {
+  .content {
+    font-size: 30px;
+  }
+}
+
+@media all and (min-width: 1366x) {
   .wrapper {
     width: 1200px;
   }
 }
 
-@media all and (max-width: 996px) and (min-width: 769px) {
+@media all and (max-width: 769px) and (min-width: 1200px) {
   .wrapper {
     width: 960px;
   }
