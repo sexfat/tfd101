@@ -81,3 +81,12 @@ exports.ugjs = function(){
   .pipe(dest('dist/js'));
 }
 
+
+const cleanCSS = require('gulp-clean-css');
+
+
+exports.minicss =  function() {
+    return src('dev/css/*.css')
+    .pipe(cleanCSS({compatibility: 'ie10'})) // 
+    .pipe(dest('dist/css/'))
+}
