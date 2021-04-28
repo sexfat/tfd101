@@ -64,3 +64,21 @@ exports.watchfile = function(){
 }
 
 
+
+const uglify = require('gulp-uglify');
+
+// function uglifyjs(){
+//     //
+// }
+
+// exports.ugjs = uglifyjs();
+
+
+exports.ugjs = function(){
+  // uglify js 任務輸出
+  return src('dev/js/*.js')
+  .pipe(uglify())
+  .pipe(dest('dist/js'));
+
+}
+
