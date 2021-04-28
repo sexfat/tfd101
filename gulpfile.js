@@ -59,6 +59,8 @@ exports.m3 = series(A , parallel(B , C ) ,D);//  依序A執行任務完 -> 同�
 //watch
 exports.watchfile = function(){
     watch('dev/*.html' , move)
+    // watch('dev/sass/*.scss')
+    // watch('dev/sass/*.scss' , move)
 }
 
 
