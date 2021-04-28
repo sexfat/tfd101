@@ -56,12 +56,7 @@ exports.m1 = parallel(A , B );//  同時執行任務
 exports.m2 = series(A , B);//  依序執行任務 
 exports.m3 = series(A , parallel(B , C ) ,D);//  依序A執行任務完 -> 同時執行 B, C 
 
-//watch
-exports.watchfile = function(){
-    watch('dev/*.html' , move)
-    // watch('dev/sass/*.scss')
-    // watch('dev/sass/*.scss' , move)
-}
+
 
 
 
@@ -108,11 +103,23 @@ const sass = require('gulp-sass');
 function sassStyle() {
     return src('dev/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(cleanCSS({compatibility: 'ie10'})) //
+        .pipe(rename({
+            extname: '.min.css'
+          })) //rename css
         .pipe(dest('dist/css'));
 };
 
 
 exports.style = sassStyle;
+
+
+//watch
+exports.watchfile = function(){
+    watch('dev/*.html' , move)
+    watch('dev/sass/*.scss' , sassStyle)
+    // watch('dev/sass/*.scss' , move)
+}
 
 
 
