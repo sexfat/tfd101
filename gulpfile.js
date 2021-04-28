@@ -81,7 +81,7 @@ exports.ugjs = function(){
   .pipe(uglify())
   .pipe(rename({
            extname: '.min.js'
-         }))
+         })) // rename js
   .pipe(dest('dist/js'));
 }
 
@@ -95,7 +95,7 @@ exports.minicss =  function() {
     .pipe(cleanCSS({compatibility: 'ie10'})) //
     .pipe(rename({
         extname: '.min.css'
-      })) 
+      })) //rename css
     .pipe(dest('dist/css/'))
 }
 
