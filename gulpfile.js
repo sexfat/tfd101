@@ -109,9 +109,26 @@ function sassStyle() {
           })) //rename css
         .pipe(dest('dist/css'));
 };
-
-
 exports.style = sassStyle;
+
+
+
+// html template
+
+const fileinclude = require('gulp-file-include');
+
+exports.html =  function includeHTML() {
+    return src('dev/*.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(dest('dist'));
+}
+
+
+
+
 
 
 //watch

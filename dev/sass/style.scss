@@ -1,10 +1,12 @@
 body {
+    background-color: #ff2323;
     .wrapper {
        width: 1200px; 
        margin: 0 auto;
+       h1 {
+        font-size: 20px;
+        color: #333 
+     }
     }
-    h1 {
-       font-size: 20px;
-       color: #333 
-    }
+    
 }
