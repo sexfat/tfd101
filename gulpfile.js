@@ -100,4 +100,24 @@ exports.minicss =  function() {
 }
 
 
+// sass 編譯
+
+const sass = require('gulp-sass');
+
+
+function sassStyle() {
+    return src('dev/sass/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(dest('dist/css'));
+};
+
+
+exports.style = sassStyle;
+
+
+
+
+
+
+
 
