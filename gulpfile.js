@@ -79,6 +79,5 @@ exports.ugjs = function(){
   return src('dev/js/*.js')
   .pipe(uglify())
   .pipe(dest('dist/js'));
-
 }
 
