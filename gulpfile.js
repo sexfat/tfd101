@@ -6,6 +6,7 @@ const {
     watch
 } = require('gulp');
 
+
 // 宣告任務
 function defaulTask(cb){
     console.log('gulp 安裝成功');
@@ -16,10 +17,11 @@ function defaulTask(cb){
 exports.do = defaulTask;
 
 function move() {
-    return src('index.html').pipe(dest('dist'));
+    return src('dev/*.html').pipe(dest('dist'));
 } 
 
-exports.copy = move;
+//執行任務
+exports.mv = move;
 
 
 
