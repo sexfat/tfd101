@@ -66,6 +66,7 @@ exports.watchfile = function(){
 
 
 const uglify = require('gulp-uglify');
+const rename = require('gulp-rename');
 
 // function uglifyjs(){
 //     //
@@ -73,20 +74,30 @@ const uglify = require('gulp-uglify');
 
 // exports.ugjs = uglifyjs();
 
-
+// js 壓縮
 exports.ugjs = function(){
   // uglify js 任務輸出
   return src('dev/js/*.js')
   .pipe(uglify())
+  .pipe(rename({
+           extname: '.min.js'
+         }))
   .pipe(dest('dist/js'));
 }
 
 
-const cleanCSS = require('gulp-clean-css');
 
+//css 壓縮
+const cleanCSS = require('gulp-clean-css');
 
 exports.minicss =  function() {
     return src('dev/css/*.css')
-    .pipe(cleanCSS({compatibility: 'ie10'})) // 
+    .pipe(cleanCSS({compatibility: 'ie10'})) //
+    .pipe(rename({
+        extname: '.min.css'
+      })) 
     .pipe(dest('dist/css/'))
 }
+
+
+
