@@ -129,14 +129,33 @@ exports.html =  function includeHTML() {
 
 
 
-
-
 //watch
 exports.watchfile = function(){
-    watch('dev/*.html' , move)
+    watch('dev/*.html' , includeHTML)
     watch('dev/sass/*.scss' , sassStyle)
     // watch('dev/sass/*.scss' , move)
 }
+
+
+const browserSync = require('browser-sync');
+const reload = browserSync.reload;
+
+
+function browser(done) {
+    browserSync.init({
+        server: {
+            baseDir: "./dist",
+            index: "index.html"
+        },
+        port: 3000
+    });
+    done();
+}
+
+exports.b = browser
+
+
+
 
 
 
