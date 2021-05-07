@@ -7,11 +7,12 @@ import {TweenMax} from "gsap";
 
 
 // jquery
-$('body').css('background-color' , '#f20' );
+$('body').css('background-color' , '#eee' );
 
 //tweenmax
 TweenMax.to('.box' , 1 , {
-    x : 100,
+    x : 300,
+    y: 100,
     rotation : 180
 })
 
