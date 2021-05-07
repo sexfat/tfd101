@@ -90,10 +90,23 @@
 /*!*********************!*\
   !*** ./src/app2.js ***!
   \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log('about')\n\n//# sourceURL=webpack:///./src/app2.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style2_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style2.css */ \"./src/style2.css\");\nconsole.log('about');\n\n\n\n\n//# sourceURL=webpack:///./src/app2.js?");
+
+/***/ }),
+
+/***/ "./src/style2.css":
+/*!************************!*\
+  !*** ./src/style2.css ***!
+  \************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/style2.css?");
 
 /***/ })
 

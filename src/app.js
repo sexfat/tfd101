@@ -5,7 +5,7 @@ import {TweenMax} from "gsap";
 
 // css 引入
 import './style.css';
-import './style2.css';
+
 
 
 

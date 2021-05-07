@@ -29,7 +29,7 @@ module.exports = {
     },       // 處裡對應模組
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "./style.css"
+            filename: "[name].css"
         })
     ],             // 對應的插件
     // devServer: {},           // 服務器配置
