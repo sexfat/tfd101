@@ -1,0 +1,9 @@
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(4, 255, 63);
+}
+h1 {
+    font-size: 100px;
+    color: rgb(247, 120, 9)
+}
