@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/sexfat/tfd101#readme",
   "devDependencies": {
+    "jquery": "^3.6.0",
     "webpack": "^4.43.0"
+  },
+  "dependencies": {
+    "gsap": "^2.1.3"
   }
 }
