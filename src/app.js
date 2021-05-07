@@ -2,7 +2,10 @@ console.log('webpack start');
 //套件引入
 import $ from "jquery";
 import {TweenMax} from "gsap";
+
+// css 引入
 import './style.css';
+import './style2.css';
 
 
 
