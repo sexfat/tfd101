@@ -2,10 +2,13 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    entry: './src/app.js',               // 入口文件
+    entry: { 
+        index:'./src/app.js',
+        about : './src/app2.js'  
+     },              // 入口文件
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: '[name].js'
       },            // 出口文件
       module: {
         rules: [{
