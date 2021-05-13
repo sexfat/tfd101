@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack  = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {
@@ -36,7 +37,7 @@ module.exports = {
     },  // 處裡對應模組
     plugins: [
         new CleanWebpackPlugin(), //清除構建檔案
-        
+
         new MiniCssExtractPlugin({
             filename: "[name].css"
         }),
@@ -56,7 +57,16 @@ module.exports = {
             filename : 'about.html'
             //目的地
         })
-    ],             // 對應的插件
+        // new webpack.ProvidePlugin({
+        //     $: 'jquery',
+        //     jQuery: 'jquery'
+        //   })
+    ],// 對應的插件
+    resolve: {
+        alias: {
+           vue: 'vue/dist/vue.js'
+        }
+      },//vue 打包對應路徑             
     devServer: {
         contentBase: './dist',
         host: 'localhost',
