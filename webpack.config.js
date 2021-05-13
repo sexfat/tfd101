@@ -56,11 +56,11 @@ module.exports = {
             //來源
             filename : 'about.html'
             //目的地
-        })
-        // new webpack.ProvidePlugin({
-        //     $: 'jquery',
-        //     jQuery: 'jquery'
-        //   })
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+          })  // 全域引入
     ],// 對應的插件
     resolve: {
         alias: {

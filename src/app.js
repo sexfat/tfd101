@@ -12,9 +12,9 @@ import './sass/main.scss';
 
 
 // jquery
-// $('body').css('background-color' , 'blue');
+$('body').css('background-color' , 'blue');
 
-
+// vue
 new Vue({
    el: '#app',
    data : {
