@@ -4,7 +4,7 @@ import $ from "jquery";
 import {TweenMax} from "gsap";
 
 // css 引入
-import './main.scss';
+import './sass/main.scss';
 
 
 

@@ -1,3 +1,3 @@
 console.log('about');
-import './main.scss';
+import './sass/about.scss';
 

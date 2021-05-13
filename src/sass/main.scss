@@ -1,7 +1,9 @@
+@import 'base/var';
+
 body {
     font-size: 20px;
-    background-color: rgb(255, 0, 0);
-    color: #fff;
+    background-color: $bgc;
+    color: $color;
     h1 {
        font-size: 40px; 
     }

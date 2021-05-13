@@ -94,19 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\nconsole.log('about');\n\n\n\n\n//# sourceURL=webpack:///./src/app2.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_about_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/about.scss */ \"./src/sass/about.scss\");\nconsole.log('about');\n\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYXBwMi5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9hcHAyLmpzPzM1ZjgiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc29sZS5sb2coJ2Fib3V0Jyk7XG5pbXBvcnQgJy4vc2Fzcy9hYm91dC5zY3NzJztcblxuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/app2.js\n");
 
 /***/ }),
 
-/***/ "./src/main.scss":
-/*!***********************!*\
-  !*** ./src/main.scss ***!
-  \***********************/
+/***/ "./src/sass/about.scss":
+/*!*****************************!*\
+  !*** ./src/sass/about.scss ***!
+  \*****************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/main.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvc2Fzcy9hYm91dC5zY3NzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL3Nhc3MvYWJvdXQuc2Nzcz8xOGIwIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/sass/about.scss\n");
 
 /***/ })
 
