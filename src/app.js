@@ -1,7 +1,7 @@
 console.log('webpack start');
 //套件引入
 import $ from "jquery";
-import {TweenMax} from "gsap";
+import { TweenMax } from "gsap";
 
 // css 引入
 import './sass/main.scss';
@@ -11,7 +11,7 @@ import './sass/main.scss';
 
 
 // jquery
-$('body').css('background-color' , '#eee' );
+// $('body').css('background-color' , '#eee' );
 
 //tweenmax
 TweenMax.to('.box' , 1 , {
