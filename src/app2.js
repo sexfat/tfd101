@@ -1,3 +1,3 @@
 console.log('about');
-import './style2.css';
+import './main.scss';
 

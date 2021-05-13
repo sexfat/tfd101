@@ -1,4 +1,9 @@
-h1 {
-    font-size: 100px;
-    color: rgb(247, 120, 9)
-}
+body {
+  font-size: 20px; }
+  body h1 {
+    font-size: 40px; }
+  body h2 {
+    font-size: 50px; }
+  body h3 {
+    font-size: 15px; }
+

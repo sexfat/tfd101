@@ -271,31 +271,19 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap */ \"./node_modules/gsap/index.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style2_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style2.css */ \"./src/style2.css\");\nconsole.log('webpack start');\n//套件引入\n\n\n\n// css 引入\n\n\n\n\n\n\n// jquery\njquery__WEBPACK_IMPORTED_MODULE_0___default()('body').css('background-color' , '#eee' );\n\n//tweenmax\ngsap__WEBPACK_IMPORTED_MODULE_1__[\"TweenMax\"].to('.box' , 1 , {\n    x : 300,\n    y: 100,\n    rotation : 180\n})\n\n\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap */ \"./node_modules/gsap/index.js\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\nconsole.log('webpack start');\n//套件引入\n\n\n\n// css 引入\n\n\n\n\n\n\n// jquery\njquery__WEBPACK_IMPORTED_MODULE_0___default()('body').css('background-color' , '#eee' );\n\n//tweenmax\ngsap__WEBPACK_IMPORTED_MODULE_1__[\"TweenMax\"].to('.box' , 1 , {\n    x : 300,\n    y: 100,\n    rotation : 180\n})\n\n\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
-/***/ "./src/style.css":
+/***/ "./src/main.scss":
 /*!***********************!*\
-  !*** ./src/style.css ***!
+  !*** ./src/main.scss ***!
   \***********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/style.css?");
-
-/***/ }),
-
-/***/ "./src/style2.css":
-/*!************************!*\
-  !*** ./src/style2.css ***!
-  \************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/style2.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/main.scss?");
 
 /***/ })
 

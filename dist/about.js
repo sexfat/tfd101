@@ -94,19 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style2_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style2.css */ \"./src/style2.css\");\nconsole.log('about');\n\n\n\n\n//# sourceURL=webpack:///./src/app2.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\nconsole.log('about');\n\n\n\n\n//# sourceURL=webpack:///./src/app2.js?");
 
 /***/ }),
 
-/***/ "./src/style2.css":
-/*!************************!*\
-  !*** ./src/style2.css ***!
-  \************************/
+/***/ "./src/main.scss":
+/*!***********************!*\
+  !*** ./src/main.scss ***!
+  \***********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/style2.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/main.scss?");
 
 /***/ })
 
