@@ -1,5 +1,11 @@
 body {
-    background-color: #ff2323;
+    header {
+       ul {
+           li.on{
+               color : #f20 
+           }
+       } 
+    }
     .wrapper {
        width: 1200px; 
        margin: 0 auto;

@@ -117,7 +117,7 @@ exports.style = sassStyle;
 
 const fileinclude = require('gulp-file-include');
 
-exports.html =  function includeHTML() {
+ function includeHTML() {
     return src('dev/*.html')
         .pipe(fileinclude({
             prefix: '@@',
@@ -149,6 +149,8 @@ function browser(done) {
         },
         port: 3000
     });
+    watch(['dev/*.html' , 'dev/**/*.html' ], includeHTML)
+    watch('dev/sass/*.scss' , sassStyle)
     done();
 }
 
